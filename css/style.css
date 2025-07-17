@@ -1,0 +1,2208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, serif;
+}
+
+.main > div.active-side{
+    animation: show 700ms both 0s  linear;
+}
+
+@keyframes show {
+    from{transform: translateY(100%);}
+    to{transform: translateY(0%);}
+}
+
+.main > div:not(.active-side) {
+    display: none;
+}
+
+.main > div.active-side {
+    display: block;
+}
+
+
+.main-titles{
+    width: 224px;
+    font-size: 22px;
+    color: #343C6A;
+    font-weight: 300;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul{
+    list-style: none;
+}
+/* start header  */
+.topbar{
+    position: fixed;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.08);
+    width: 100%;
+    height: 60px;
+    padding: 0 20px;
+    display: grid ;
+    grid-template-columns: 3fr 9fr  5fr;
+    align-items: center;
+    z-index: 1;
+}
+
+.topbar .logo{
+    color: #343C6A;
+    display: flex;
+    align-items: center;
+}
+
+.topbar .logo img{
+    margin-right: 10px;
+}
+
+.topbar .page-title{
+    color: #343C6A;
+    font-weight: 300;
+    letter-spacing: 5px;
+}
+
+[data-title]{
+    animation: shows 700ms both 0s  linear;
+}
+
+
+@keyframes shows {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+
+.topbar .search{
+    position: relative;
+    width: 100%;
+    border-radius: 9999px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    padding-left: 30px;
+    font-size: 16px ;
+    justify-self: center;
+    color: #808a99;
+    background-color: #f5f5f5;
+}
+
+.topbar form{
+    display: flex;
+    position: relative;
+    width: 50%;
+}
+
+.details form i{
+    position: absolute;
+    left: 10px;
+    top: 11px;
+    z-index: 3;
+    color: #504e4e;
+    cursor: pointer;
+}
+
+.topbar .details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.details .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    color: #504e4e;
+    background-color: #f5f5f5;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.details .icon:hover{
+    background-color: #cccaca;
+
+}
+
+.details .fa-bell{
+    color: #FE5C73;
+}
+
+.user{
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+.user img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 80%;
+    width: 80%;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.user img:hover{
+    width: 90%;
+    height: 90%;
+}
+
+/* end header  */
+
+
+/* start sidebar  */
+.sidebar{
+    position: fixed;
+    top: 60px;
+    width: 230px;
+    height: calc( 100% - 60px );
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+.sidebar ul{
+    margin-top: 20px;
+}
+
+.sidebar ul li{
+    width: 90%;
+    list-style: none;
+    border-radius: 28px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+
+.sidebar ul li a:not(.active):hover{
+    color: blue;
+
+}
+
+.sidebar ul li a{
+    width: 100%;
+    text-decoration: none;
+    color: #B1B1B1;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.sidebar ul li a h3{
+    font-weight: 50 ;
+    font-size: 19px;
+
+}
+
+.sidebar ul li a i{
+    min-width: 60px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.sidebar ul .active{
+    border-left: 3px solid #2D60FF;
+    color: #2D60FF;
+}
+
+/* end sidebar  */
+.main{
+    position: absolute;
+    top: 70px;
+    width: calc( 100% - 230px);
+    left: 230px;
+    min-height: calc( 100vh - 60px);
+    background-color: #f5f5f5;
+    padding: 10px;
+}
+
+/* start main dashboard */
+
+.dashboard{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 20px;
+}
+
+/* for cards  */
+.container-card{
+    color: #fff;
+}
+
+.cards .container-card .title{
+    color: #0026FF;
+    font-size: 20px;
+    margin-bottom: 7px;
+    font-weight: 300;
+}
+
+.container-card .conatainer{
+    width: 350px;
+    height: 169px;
+    background-image: linear-gradient(to right,#4C49ED 0%,#423FEE 78%,#0A06F4 100%);
+    box-shadow: 1px 1px 2px blue;
+    padding: 10px;
+    border-bottom: 1px solid #dbdbdb;
+    border-top-left-radius: 28px;
+    border-top-right-radius: 28px;
+}
+
+
+
+.container-card .header {
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-card .header .chip{
+    width: 34.77px;
+    height: 34.77px;
+}
+
+.container-card .header .text h5{
+    font-size: small;
+    font-weight: 400;
+}
+.container-card .header .text h3{
+    font-size: 20px;
+}
+
+
+
+.container-card .validate{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding-right: 8px;
+    margin-left: 15px;
+}
+
+.container-card .validate h4{
+    font-style: 16px;
+    font-weight: 300;
+    color: #C7C6FA;
+}
+
+
+.container-card .details{
+    display: flex;
+    width: 350px;
+    height: 66px;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(to right,rgb(67, 67, 255),#3838ffa9,blue);
+    box-shadow: 1px 1px 2px blue;
+    padding: 20px;
+    border-bottom-left-radius: 28px;
+    border-bottom-right-radius: 28px;
+}
+
+
+.container-card .details .logo-card{
+    width: 44px;
+    height: 30px;
+}
+
+.container-card .details .number{
+    font-size: 23px;
+    font-weight: 700;
+    
+}
+
+/* for recent transaction  */
+
+
+.recent-transaction .conts{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-around;
+    width: 350px;
+    height: 235px;
+    background-color: #fff;
+    border-radius: 28px;
+    padding: 10px 30px ;
+}
+.recent-transaction .det{
+    transition: all 0.2s ease;
+}
+.recent-transaction .det:hover{
+    color: #474646;
+}
+
+.recent-transaction .conts .detailes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    transition: all 0.3s ease-in;
+    border-radius: 28px;
+    cursor: pointer;
+}
+
+.recent-transaction .conts .detailes:hover{
+    background-color: #ccc6c6;
+}
+
+.recent-transaction .conts .detailes .cont-img{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.recent-transaction .conts .detailes .cont-img img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 13px;
+    border-radius: 50%;
+}
+
+.recent-transaction .conts .detailes:first-child .cont-img img,
+.recent-transaction .conts .detailes:first-child .cont-img{
+    background-color: #FFF5D9;
+}
+
+.recent-transaction .conts .detailes:first-child .cont-img img:hover{
+    background-color: #fff0c7;
+}
+
+.recent-transaction .conts .detailes:nth-child(2) .cont-img img,
+.recent-transaction .conts .detailes:nth-child(2) .cont-img{
+    background-color: #E7EDFF;
+}
+
+.recent-transaction .conts .detailes:nth-child(2) .cont-img img:hover{
+    background-color: #c4d1fa;
+}
+
+.recent-transaction .conts .detailes:last-child img,
+.recent-transaction .conts .detailes:last-child .cont-img{
+    background-color: #DCFAF8;
+}
+
+.recent-transaction .conts .detailes:last-child img:hover{
+
+    background-color: #bbf7f3;
+}
+
+.conts .detailes h5{
+    color: #718EBF;
+}
+
+.conts .detailes:first-child .value{
+color: #FF4B4A;
+}
+.conts .detailes:not(:first-child) .value{
+color: #41D4A8;
+}
+
+
+/* for weekly activity  */
+
+
+/* for quick transfer  */
+.contain{
+    width: 350px;
+    height: 235px;
+}
+
+.container2{
+    width: 350px;
+    height: 235px;
+    background-color: #fff;
+    border-radius: 18px;
+}
+
+.details-sender{
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    cursor: pointer;
+}
+
+.details-sender img{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    transition: all 0.2s linear;
+}
+.details-sender img:not( .next-icon img):hover{
+    width: 50px;
+    height: 50px;
+    border-radius: 9999px;
+    background-color: #e0dddd;
+}
+
+
+.details-sender h4{
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.details-sender h4:hover{
+    color: rgb(95, 84, 84);
+    font-size: 18px;
+}
+
+.details-sender h5{
+    font-weight: 300;
+    font-size: 13px;
+    color: #616161;
+}
+
+.details-sender h5:hover{
+    color: #525050;
+    font-size: 14px;
+}
+
+.details-sender .next-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    margin-top: 50px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.details-sender .next-icon:hover{
+    background-color: #cecaca;
+}
+
+.details-sender .next-icon img{
+    width: 25px;
+    height: 25px;
+}
+
+.send-money{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.send-money h5{
+    padding: 10px;
+    margin-right: 30px;
+    font-size: 16px;
+    color: #3a3a3a;
+}
+
+.send-money form{
+    width: 265px;
+}
+
+.send-money form input{
+    width: 165px;
+    height: 50px;
+    padding-left: 30px;
+    border-radius: 9998px;
+    outline: none;
+    border: none;
+    background-color: #f5f5f5;
+    transition: all 0.3s ease;
+}
+
+.send-money form input:focus{
+    background-color: #ebe8e8;
+    font-size: 15px;
+}
+
+.quick-transfer .submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+
+
+.send-money button{
+    width: 125px;
+    height: 50px;
+    margin-left: -120px;
+    margin-right: 30px;
+    border-radius: 9998px;
+    outline: none;
+    border: none;
+    background-color: #1814F3;
+    color: #fff;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+.send-money button:hover{
+    background-color: #201ebd;
+
+}
+
+
+/* end main dashboard */
+
+/* start transaction  */
+
+/* .Transaction{
+    display: none;
+} */
+
+
+.Transaction .upper-side{
+    display: flex;
+    gap: 10px;
+}
+
+/* for expense */
+
+.Transaction .expense{
+    width: 350px;
+    height: 235px;
+}
+
+
+.Transaction .container{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 10px;
+    width: 350px;
+    height: 235px;
+    border-radius: 28px;
+    background-color: #fff;
+}
+.Transaction .container .row{
+    padding: 10px;
+}
+
+/* draw the column  */
+
+.Transaction .container .row .col{
+    width:  30px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #857e7e;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.Transaction .container .row .col:hover{
+    opacity: 1;
+}
+
+.Transaction .container .row:first-child .col{
+    height: 90px;
+}
+.Transaction .container .row:nth-child(2) .col{
+    height: 160px;
+}
+.Transaction .container .row:nth-child(3) .col{
+    height: 140px;
+}
+.Transaction .container .row:nth-child(4) .col{
+    background: rgb(30, 207, 30);
+    height: 150px;
+}
+.Transaction .container .row:nth-child(5) .col{
+    height: 80px;
+}
+.Transaction .container .row:last-child .col{
+    height: 133px;
+}
+
+.Transaction .container p:not(.active-chart p:first-child){
+    color: #3f3f3f;
+}
+
+.Transaction .active-chart p:first-child{
+    margin-left: -10px;
+}
+
+
+
+/* start lower side */
+
+.lower-side{
+    width: 100%;
+}
+
+
+.Transaction a{
+    text-decoration: none;
+    color: black;
+}
+
+.Transaction .recent-transaction{
+    width: 100%;
+}
+
+
+
+.Transaction .containers{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.Transaction .containers ul{
+    display: flex;
+    margin-bottom: 20px;
+    height: 29px;
+    list-style: none;
+    position: relative;
+}
+
+.Transaction .containers ul li{
+    height: 100%;
+    position: relative;
+    margin-right: 50px;
+}
+
+.Transaction .containers ul li .active{
+    color: blue;
+}
+
+.Transaction .containers ul li .active::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    border-radius: 100%;
+    background-color: blue;
+    z-index: 3;
+}
+
+
+.Transaction .containers ul::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 95%;
+    height: 1px;
+    border-radius: 100%;
+    background-color: #777;
+}
+
+.Transaction .containers ul li a{
+    transition: all 0.3s ease;
+}
+
+.Transaction .containers ul li a:hover{
+    color: #3348c2;
+}
+
+
+.Transaction .content-table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 16px;
+    min-width: 95%;
+    border-radius: 28px;
+    background-color: #fff;
+}
+
+.Transaction .content-table thead tr{
+    background-color: #fff;
+    color: #343C6A;
+    text-align: left;
+    font-weight: bold;
+}
+
+.Transaction .content-table th,
+.Transaction .content-table td {
+    padding: 12px 15px;
+}
+
+.Transaction .content-table td:first-child{
+    display: flex;
+    align-items: center;
+}
+
+.Transaction .content-table td:first-child img{
+    margin-right: 5px;
+}
+
+
+.Transaction  .content-table tr{
+    position: relative;
+
+}
+
+.Transaction .content-table tr:not(.content-table tbody tr:last-child)::after{
+    content: '';
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+    width: 95%;
+    height: 1px;
+    border-radius: 100%;
+    background-color: #777;
+}
+
+/* painting the amount to red and green */
+
+.Transaction .content-table tbody tr .download{
+    position: relative;
+    text-align: left;
+    color: #0026FF;
+}
+.Transaction .content-table tbody tr .download::after{
+    content: '';
+    cursor: pointer;
+    position: absolute;
+    left: 10px;
+    bottom: 6px;
+    width: 60%;
+    height: 66%;
+    border: 1px solid blue;
+    border-radius: 9999px;
+}
+.Transaction .content-table tbody tr .download:hover{
+    color: #021bac;
+}
+
+
+.Transaction .content-table tbody tr .amount{
+    color: green;
+}
+.Transaction .content-table tbody tr:nth-child( n+4 ) .amount{
+    color: red;
+}
+
+/* end transaction  */
+
+
+/* start accounts  */
+/* 
+.Accounts{
+    display: none;
+} */
+
+
+.person-account{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.person-account .container-person-account{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 20px 40px;
+    border-radius: 29px;
+    line-height: 1.3;
+}
+
+.person-account .container-person-account .imag{
+    position: relative;
+    width: 60px;
+    height: 60px; 
+    background-color: red;
+    transform: translateX(-30%);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.person-account .container-person-account:first-child .imag{background-color: #FFF5D9;}
+.person-account .container-person-account:nth-child(2) .imag{background-color: #E7EDFF;}
+.person-account .container-person-account:nth-child(3) .imag{background-color: #FFE0EB;}
+.person-account .container-person-account:last-child .imag{background-color: #DCFAF8;}
+
+.person-account .container-person-account:first-child .imag:hover{}
+.person-account .container-person-account:nth-child(2) .imag:hover{}
+.person-account .container-person-account:nth-child(3) .imag:hover{}
+.person-account .container-person-account:last-child .imag:hover{}
+
+
+.person-account .container-person-account .imag img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+.person-account .container-person-account .det .name-part{
+    font-size: 15px;
+    color: rgb(61, 35, 95);
+}
+
+
+.person-account .container-person-account .det .money{
+    font-size: 25px;
+    font-weight: 700;
+}
+/* the mid side */
+.mid-side{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* start last transaction */
+
+.last-transaction{
+    width: 65%;
+    height: 40%;
+}
+
+.last-transaction .container-last-transaction{
+    width: 100%;
+    height: 40%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 28px;
+    padding-left: 0%;
+}
+
+
+.details-last-transaction{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 40.33%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    line-height: 1.5;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.last-transaction .container-last-transaction .details-last-transaction:hover{
+    background-color: #f1f0f0;
+}
+
+.details-last-transaction .image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 40px;
+    background-color: red;
+    border-radius: 15px;
+    transform: translateX(20px);
+    transition: all 0.2s ease;
+}
+
+.details-last-transaction:first-child .image{background-color: #DCFAF8;}
+.details-last-transaction:nth-child(2) .image{background-color: #E7EDFF;}
+.details-last-transaction:last-child .image{background-color: #FFE0EB;}
+
+.details-last-transaction:first-child .image:hover{}
+.details-last-transaction:nth-child(2) .image:hover{}
+.details-last-transaction:last-child .image:hover{}
+
+
+
+.details-last-transaction .name-last-transaction{
+    font-size: 19px;
+}
+
+.details-last-transaction .same{
+    font-size: 18px;
+    color: #777;
+}
+
+.details-last-transaction .name-date .data{
+    font-size : 15px;
+}
+
+.details-last-transaction:first-child .amount-last-transaction{
+    color: red;
+}
+.details-last-transaction .amount-last-transaction{
+    color: green;
+}
+
+/* start bottom side */
+.bottom-side{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.depit-credit-card-chart{
+    width: 65%;
+    height: 40%;
+}
+.chart{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 29px;
+}
+/* the upper side */
+.chart .upper-side-chart{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chart .upper-side-chart .rigth-side{
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chart .upper-side-chart .square{
+    width: 10px;
+    height: 10px;
+    border-radius: 3px;
+
+}
+
+.chart .upper-side-chart .square1{
+    background-color: blue;
+}
+.chart .upper-side-chart .square2{
+    background-color:green;
+}
+
+
+/* bottom side */
+
+.chart .draw{
+    display: flex;
+    height: 90%;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 40px;
+    padding-bottom: 0;
+}
+
+
+.chart .draw .col .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 70px;
+    height: 250px;
+
+}
+
+.chart .draw .col .row .row1{
+    width: 40%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: blue;
+}
+.chart .draw .col .row .row2{
+    width: 40%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: green;
+}
+
+.chart .same{
+    color: #45314b; 
+}
+.chart span{
+    color: black;
+}
+
+.chart .draw .day{
+    transform: translateX(20px);
+}
+
+/* row 1 */
+.chart .draw .col:first-child .row .row1{
+    height: 50%;
+}
+.chart .draw .col:nth-child(3) .row .row1{
+    height: 40%;
+}
+.chart .draw .col:nth-child(4) .row .row1{
+    height: 60%;
+}
+
+.chart .draw .col:nth-child(6) .row .row1{
+    height: 30%;
+}
+.chart .draw .col:last-child .row .row1{
+    height: 80%;
+}
+/* row 2 */
+.chart .draw .col:first-child .row .row2{
+    height: 60%;
+}
+.chart .draw .col:nth-child(3) .row .row2{
+    height: 80%;
+}
+.chart .draw .col:nth-child(4) .row .row2{
+    height: 20%;
+}
+
+.chart .draw .col:nth-child(6) .row .row2{
+    height: 10%;
+}
+.chart .draw .col:last-child .row .row2{
+    height: 50%;
+}
+
+/* start invoices sent  */
+
+
+.invoices-sent{
+    width: 30%;
+    height: 50%;
+}
+
+.invoices-sent .container-invoices-sent{
+    width: 100%;
+    height: 40%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 28px;
+    padding-left: 0%;
+}
+
+
+.details-invoices-sent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40.33%;
+    transition: all 0.3s ease;
+    line-height: 2;
+    cursor: pointer;
+}
+.details-invoices-sent:hover{
+    background-color: #e6e6e6;
+    border-radius: 10px;
+}
+
+.details-invoices-sent .image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: blue;
+    border-radius: 25px;
+    transform: translateX(40px);
+    transition: all 0.3s ease;
+    
+}
+
+
+.details-invoices-sent:first-child .image{background-color: #DCFAF8;}
+.details-invoices-sent:nth-child(2) .image{background-color: #FFF5D9;}
+.details-invoices-sent:nth-child(3) .image{background-color: #E7EDFF;}
+.details-invoices-sent:last-child .image{background-color: #FFE0EB;}
+
+.details-invoices-sent:first-child .image:hover{}
+.details-invoices-sent:nth-child(2) .image:hover{}
+.details-invoices-sent:nth-child(3) .image:hover{}
+.details-invoices-sent:last-child .image:hover{}
+
+
+
+.details-invoices-sent .name-invoices-sent{
+
+    font-size: 20px;
+}
+
+.details-invoices-sent .same{
+    font-size: 18px;
+    color: rgb(102, 102, 153);
+}
+
+.details-invoices-sent .name-date .time-ago{
+    font-size : 15px;
+    color: rgb(102, 102, 153);
+}
+
+/* end accounts  */
+
+
+
+/* start investments */
+
+/* .Investments{
+    display: none;
+} */
+
+/* start the top */
+
+.person-account-inv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.person-account-inv .container-person-account-inv{
+    display: flex;
+    width: 30%;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #fff;
+    padding: 20px 40px;
+    border-radius: 29px;
+    line-height: 1.3;
+}
+
+.person-account-inv .container-person-account-inv .imag{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px; 
+    background-color: red;
+    transform: translateX(-30%);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.person-account-inv .container-person-account-inv:first-child .imag{background-color: #DCFAF8;}
+.person-account-inv .container-person-account-inv:nth-child(2) .imag{background-color: #FFE0EB;}
+.person-account-inv .container-person-account-inv:last-child .imag{background-color: #E7EDFF;}
+
+
+.person-account-inv .container-person-account-inv:first-child .imag:hover{}
+.person-account-inv .container-person-account-inv:nth-child(2) .imag:hover{}
+.person-account-inv .container-person-account-inv:last-child .imag:hover{}
+
+
+.person-account-inv .container-person-account-inv .det .name-part{
+    font-size: 15px;
+    color: rgb(61, 35, 95);
+}
+
+
+.person-account-inv .container-person-account-inv .det .money{
+    font-size: 25px;
+    font-weight: 700;
+}
+
+/* start mid  */
+
+
+/* start bottom  */
+.Investments .bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.My-invetment{
+    width: 60%; 
+    height: 50vh;
+}
+
+.My-invetment .container-investment .det{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    width: 100%;
+    height: 100px;
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.My-invetment .container-investment .det:hover{
+    background-color: #e0dfdf;
+}
+
+.My-invetment .image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 18px;
+    transform: translateX(20px);
+    background-color: red;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.My-invetment .det:first-child .image{background-color: #FFE0EB;}
+.My-invetment .det:nth-child(2) .image{background-color: #E7EDFF;}
+.My-invetment .det:last-child .image{background-color: #FFF5D9;}
+
+.My-invetment .det:first-child .image:hover{}
+.My-invetment .det:nth-child(2) .image:hover{}
+.My-invetment .det:last-child .image:hover{}
+
+
+
+.My-invetment .container-investment .det .name-inv{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.My-invetment .container-investment .same{
+    color: #777;
+}
+
+.My-invetment .container-investment .det .mud{
+    color: green;
+}
+
+.My-invetment .container-investment .det:last-child .mud{
+    color: red;
+}
+/* table  */
+
+.trending-stock{
+    width: 35%;
+    height: 100%;
+}
+
+.trending-stock table{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 28px;
+    width: 90% ;
+    font-weight: 500;
+}
+
+.trending-stock table tr{
+    transition: all 0.3s ease;
+}
+.trending-stock table tr:hover{
+    background-color: #f1f0f0;
+}
+
+.trending-stock table thead tr{
+    text-align: left;
+    color: rgb(124, 124, 255);
+    position: relative;
+}
+
+.trending-stock table thead tr::after{
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: 0;
+    width: 95%;
+    height: 1px;
+    border-radius: 100%;
+    background-color: #777;
+}
+
+.trending-stock table tr{
+    line-height: 2;
+}
+
+.trending-stock table tbody tr .amount{
+    color: green;
+}
+
+.trending-stock table tbody tr:last-child .amount{
+    color: red;
+}
+
+/* end investments */
+/* start credit card  */
+
+/* .Credit-Card{
+    display: none;
+} */
+
+
+
+.Credit-Card .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Credit-Card .top .cardse:nth-child(n+2){
+    margin-top: 22px;
+}
+
+
+/* start mid side of credit card */
+
+.card-list{
+    width: 100%;
+    height: 30.33%;
+    margin-top: 10px;
+}
+.container-card-list .det-card-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 10px;
+    padding-left: 0;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.container-card-list .det-card-list:hover{
+    background-color: #dbd9d9;
+}
+
+.Credit-Card .image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.det-card-list .image {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    transform: translateX(30px);
+    background-color: green;
+}
+
+.det-card-list:first-child .image{background-color: #E7EDFF;}
+.det-card-list:nth-child(2) .image{background-color: #FFE0EB;}
+.det-card-list:last-child .image{background-color: #FFF5D9;}
+
+.det-card-list:first-child .image:hover{background-color: #7e98e7;}
+.det-card-list:nth-child(2) .image:hover{background-color: #e781a5;}
+.det-card-list:last-child .image:hover{background-color: #f0d17d;}
+
+
+.det-card-list .priority{
+    line-height: 1.5;
+    color: #777;
+    font-size: 15px;
+}
+
+.det-card-list .view-details-card-list{
+    color: blue;
+}
+
+.det-card-list .view-details-card-list:hover{
+    color: #2f42af;
+}
+
+/* start bottom side in credit card  */
+
+.Credit-Card .bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.add-new-card{
+    width: 60%;
+    min-height: 50%;
+    margin-top: 10px;
+    line-height: 1.6 ;
+}
+
+.container-add-new-card{
+    width: 100%;
+    min-height: 100%;
+    padding: 20px;
+    border-radius: 28px;
+    background-color: #fff;
+}
+
+.container-add-new-card .info-add-new-card{
+    color: #777;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+
+.container-add-new-card  .mid-add-new-card form{
+    display: flex;
+    align-items: center;
+}
+.container-add-new-card  .mid-add-new-card form div{
+    margin: 0 10px 20px 0;
+}
+
+.container-add-new-card  .mid-add-new-card form div .field{
+    width: 250px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #c4c4c4;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+.container-add-new-card  .mid-add-new-card form div .field:focus{
+    font-size: 17px;
+    background-color: rgb(240, 236, 236);
+    border: none;
+}
+
+.container-add-new-card  .add-card{
+    width: 20%;
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+    font-size: 17px;
+    background-color: blue;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.container-add-new-card  .add-card:hover{
+    background-color: rgb(23, 23, 175);
+}
+
+
+.card-setting{
+    width: 35%;
+    height: 50%;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+.card-setting .container-card-setting{
+    width: 100%;
+    height: 100%;
+    text-transform: capitalize;
+    padding: 20px 10px;
+    background-color: #fff;
+    border-radius: 28px;
+}
+
+.card-setting .container-card-setting .det-card-setting{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    transition: all 0.3s ease;
+
+    cursor: pointer;
+}
+
+.card-setting .container-card-setting .det-card-setting:hover{
+    background-color: #ebe7e7;
+}
+
+.card-setting .container-card-setting .det-card-setting .image{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 20px;
+}
+
+.card-setting .container-card-setting .det-card-setting:first-child .image{background-color: #FFF5D9;}
+.card-setting .container-card-setting .det-card-setting:nth-child(2) .image{background-color: #E7EDFF;}
+.card-setting .container-card-setting .det-card-setting:nth-child(3) .image{background-color: #FFE0EB;}
+.card-setting .container-card-setting .det-card-setting:nth-child(4) .image{background-color: #DCFAF8;}
+.card-setting .container-card-setting .det-card-setting:last-child .image{background-color: #DCFAF8;}
+
+
+
+.card-setting .container-card-setting .det-card-setting .name{
+    font-weight: 600;
+    font-size: 19px;
+}
+
+
+.card-setting .container-card-setting .det-card-setting .p{
+    font-size: 15px;
+    color: #777;
+}
+
+/* end credit card  */
+/* start loans */
+
+/* .Loans{
+    display: none;
+} */
+/* the upper side */
+
+.personal-loan{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px 0px;
+    justify-content: space-between;
+    line-height: 1.6;
+    width: 100%;
+    text-transform: capitalize;
+
+}
+
+.personal-loan .det{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 24%;
+    height: 100%;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.personal-loan .det .image{
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.personal-loan .det:first-child .image{background-color: #E7EDFF;}
+.personal-loan .det:nth-child(2) .image{background-color: #FFF5D9;}
+.personal-loan .det:nth-child(3) .image{background-color: #FFE0EB;}
+.personal-loan .det:last-child .image{background-color: #DCFAF8;}
+
+
+
+
+.personal-loan .det .name{
+    color: #161515;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.personal-loan .det .name:hover{
+    color: #8f8a8a;
+}
+
+.personal-loan .det .amount{
+    font-weight: 600;
+    font-size: 19px;
+}
+/* start the lower side */
+
+
+.active-loans{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+
+
+.active-loans table{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px ;
+    border-collapse: collapse;
+
+}
+
+.active-loans table tr{
+    position: relative;
+    line-height: 3;
+
+}
+
+.active-loans table tr:not( .active-loans table tbody tr:last-child)::after{
+    content: '';
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+    width: 97%;
+    height: 1px;
+    background-color: #777;
+    border-radius: 50%;
+}
+
+.active-loans table .repay{
+    position: relative;
+    width: 10%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.active-loans table .repay:hover{
+    color: rgb(44, 42, 145);
+}
+
+.active-loans table tbody tr:first-child td:last-child{
+    color: blue;
+
+}
+
+.active-loans table tbody tr:first-child td:last-child::after{
+    border-color: blue;
+}
+
+.active-loans table .repay::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 90%;
+    height: 50%;
+    border: 1px solid #777;
+    border-radius: 9999px;
+}
+
+.active-loans table thead{
+    text-align: left;
+    color: rgb(79, 79, 231);
+}
+
+.active-loans table tr th,
+.active-loans table tr td{
+    padding: 20px 10px;
+    text-align: center;
+}
+
+
+.active-loans table tbody tr:last-child{
+    color: red;
+}
+
+/* end loans */
+
+
+/*  start services */
+/* .Services{
+    display: none;
+} */
+
+/* start upper */
+.container-services{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    line-height: 1.6;
+    text-transform: capitalize;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.container-services .det{
+    display: flex;
+    align-items: center;
+    width: 25%;
+    height: 100px;
+    background-color: #fff;
+    padding: 20px;
+    gap: 10px;
+    border-radius: 28px;
+    cursor: pointer;
+}
+
+.Services .image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-services .det .image{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.container-services .det:first-child .image{background-color: #E7EDFF;}
+.container-services .det:nth-child(2) .image{background-color: #FFF5D9;}
+.container-services .det:last-child .image{background-color: #DCFAF8;}
+
+.container-services .det .name{
+    font-weight: 700;
+    font-size: 19px;
+}
+
+
+.container-services .det .p{
+    color: #777;
+    font-size: 15px;
+}
+
+/* start bottom side */
+
+.bank-services-list{
+    margin-top: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.container-bank-services-list .det{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 20px;
+    line-height: 1.6;
+    padding: 20px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.container-bank-services-list .det:hover{
+    background-color: #cecccc;
+}
+
+.container-bank-services-list .det .image{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: red;
+}
+
+.container-bank-services-list .det:first-child .image{background-color: #FFE0EB;}
+.container-bank-services-list .det:nth-child(2) .image{background-color: #FFF5D9;}
+.container-bank-services-list .det:nth-child(3) .image{background-color: #FFE0EB;}
+.container-bank-services-list .det:nth-child(4) .image{background-color: #E7EDFF;}
+.container-bank-services-list .det:nth-child(5) .image{background-color: #DCFAF8;}
+.container-bank-services-list .det:last-child .image{background-color: #FFE0EB;}
+
+
+.container-bank-services-list .det .name{
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.container-bank-services-list .det .p{
+    color: #777;
+    font-size: 15px;
+}
+
+
+
+.container-bank-services-list .det .view-details{
+    color: rgb(94, 94, 241);
+    position: relative;
+    text-align: center;
+    width: 10%;
+    transition: all 0.1s ease;
+    cursor: pointer;
+}
+
+.container-bank-services-list .det .view-details:hover{
+    color: #283ba7;
+}
+
+.container-bank-services-list .det .view-details::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    bottom: 0%;
+    border: 1px solid rgb(94, 94, 241);
+    border-radius: 9999px;
+}
+
+.container-bank-services-list .det:first-child .view-details{
+    color: blue;
+}
+.container-bank-services-list .det:first-child .view-details::after{
+    border: 1px solid blue;
+}
+/*  end services */
+
+
+/* start setting */
+
+/* .Setting{
+    display: none;
+} */
+
+.container-setting{
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    border-radius: 29px;
+    background-color: #fff;
+}
+
+.container-setting ul{
+    display: flex;
+    width: 100%;
+    padding-right: 50%;
+    height: 10%;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+
+}
+
+.container-setting ul::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #777;
+    left: 1px;
+    bottom: 0;
+    border-radius: 50%;
+}
+
+
+.container-setting ul li .active{
+    position: relative;
+    transition: all 0.5s ease;
+    color: #0026FF; 
+}
+.container-setting ul li .active::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: blue;
+    left: 1px;
+    bottom: -16px;
+    transition: all 0.5s ease;
+
+}
+
+
+
+.settings > div:not(.active-setting ) {
+    display: none;
+}
+
+.settings > div.active-setting {
+    display: block;
+}
+
+/* start edit profile in setting  */
+
+
+.edit-profile{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    height: 90%;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.edit-profile .input form{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: 10%;
+    gap: 20px 20px;
+}
+
+.edit-profile .input form .con{
+    display: flex;
+    flex-wrap: wrap;
+    width: 48%;
+    background-color: #fff;
+    padding: 5px;
+}
+
+.edit-profile .input form .con label{
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.edit-profile .input form .con input{
+    width: 100%;
+    height: 70%;
+    border: 1px solid #777;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.edit-profile .input form .con input:focus{
+    background-color: #dbd3d3;
+    color: rgb(5, 5, 5);
+    font-size: 17px;
+}
+
+.edit-profile .input form .con input:focus::placeholder {
+    color: rgb(61, 61, 61);
+}
+
+.edit-profile .input form .con:last-child{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -15px;
+}
+.edit-profile .input form .con:last-child .save{
+    width: 40%;
+    height: 40px;
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.edit-profile .input form .con:last-child .save:hover{
+    background-color: #010f5c;
+}
+
+
+.edit-profile .image-profile{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #fff;
+    position: relative;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.edit-profile .image-profile:hover{
+    height: 230px;
+    width: 230px;
+    background-color: #ebebeb;
+}
+
+.edit-profile .image-profile .img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+
+.edit-profile .image-profile .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 5%;
+    right: 5px;
+    background-color: blue;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.edit-profile .image-profile .icon:hover{
+    background-color: #00106d;
+}
+
+/* start preference  */
+
+.preferences{
+    width: 100%;
+    height: 90%;
+    padding: 20px;
+    background-color: #fff;
+    line-height: 2;
+}
+
+.preferences .inputs{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.preferences .inputs .con{
+    width: 49%;
+    padding: 10px;
+}
+
+.preferences .inputs label{
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.preferences .inputs input{
+    width: 100%;
+    outline: none;
+    border: 1px solid #777;
+    height: 40px;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 19px;
+    font-weight: 200;
+    transition: all 0.3s ease;
+}
+
+.preferences .inputs input:focus{
+    background-color: #dbd3d3;
+    color: rgb(5, 5, 5);
+    font-size: 21px;
+}
+
+.edit-profile .input form .con input:focus::placeholder {
+    color: rgb(61, 61, 61);
+}
+
+.preferences .lower{
+    padding: 10px;
+}
+
+.preferences .lower .en{
+    display: flex;
+    align-items: center;
+    margin: 10px 10px 10px 0;
+}
+
+.preferences .lower .en p{
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.Setting .btn{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.Setting .save{
+    width: 150px;
+    height: 40px;
+    color: white;
+    border: none;
+    font-size: 27px;
+    font-weight: 500;
+    background-color: blue;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.Setting .save:hover{
+    background-color: #00106d;
+}
+
+.checkbox{
+    display: none;
+}
+
+.enable{
+    width: 60px;
+    height: 30px;
+    background-color: #e2e1e1;
+    border-radius: 9999px;
+    position: relative;
+}
+
+
+.enable .circul{
+    position: absolute;
+    width: 40%;
+    height: 90%;
+    bottom: 2px;
+    left: 1px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+#checked:checked ~ .enable .circul,
+#checked1:checked ~ .enable .circul,
+#checked2:checked ~ .enable .circul,
+#checked3:checked ~ .enable .circul{
+    transform: translateX(130%);
+}
+
+#checked:checked ~ .enable,
+#checked1:checked ~ .enable,
+#checked2:checked ~ .enable,
+#checked3:checked ~ .enable{
+    background-color: rgb(69, 214, 69);
+}
+
+
+/* start security  */
+.Security{
+    width: 100%;
+    height: 90%;
+    padding: 20px;
+    line-height: 2;
+    background-color: #fff;
+}
+
+.Security .main-titles{
+    width: 100%;
+}
+
+.Security .con2{
+    display: flex;
+    align-items: center;
+}
+
+.Security .con2 p{
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.Security .con label{
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.Security .con input{
+    width: 45%;
+    height: 40px;
+    outline: none;
+    border: 1px solid #777;
+    font-size: 17px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.Security .con input:focus{
+    background-color: #d3d1d1;
+    font-size: 20px;
+}
+
+/* end setting */

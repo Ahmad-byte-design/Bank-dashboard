@@ -1,0 +1,1557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- <script src="js/loader.js"></script> -->
+    <title>bank</title>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="topbar">
+            <div class="logo">
+                <img src="imags/iconfinder_vector_65_09_473792 1.png" alt="">
+                <h2 class="main-title">BankDash.</h1>
+            </div>
+            <div class="page-title-con">
+                <h2 class="page-title">Overview</h2>
+            </div>
+
+            <div class="details">
+                <form action="">
+                    <i class="fas fa-search"></i>
+                    <input type="search" class="search" placeholder="search for something">
+                </form>
+                <!-- setting icon  -->
+                    <i class="fas fa-cog icon"></i>
+                    <i class="fas fa-bell icon"></i>
+                    <div class="user">
+                        <img src="imags/user 3 1.png" alt="">
+                    </div>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <ul>
+                <li id="sidebar">
+                    <a id="Dashboard" class="active" href="#">
+                        <i class="fas fa-home"></i>
+                        <h3>Dashboard</h3>
+                    </a>
+                </li>
+                <li>
+                    <a id="Transaction" href="#">
+                        <i class="fas fa-exchange-alt"></i>
+                        <h3>Transaction</h3>
+                    </a>
+                </li>
+                <li>
+                    <a id="Accounts" href="#">
+                        <i class="fas fa-user"></i>
+                        <h3>Accounts</h3>   
+                    </a>
+                </li>
+                <li>
+                    <a id="Investment" href="#">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Investments</h3>
+                    </a>
+                </li>
+                <li>
+                    <a id="Credit-Card" href="#">
+                        <i class="fas fa-credit-card"></i>
+                        <h3>Credit Cards</h3>
+                    </a>
+                </li>
+                <li>
+                    <a id="Loans" href="#">
+                        <i class="fas fa-hand-holding-usd"></i>
+                        <h3>Loans</h3>
+                    </a>
+                </li>
+                <li>
+                    <a id="Services" href="#">
+                        <i class="fas fa-concierge-bell"></i>
+                        <h3>Services</h3>
+                    </a>
+                </li>
+                <li>
+                    <a id="Setting" href="#">
+                        <i class="fas fa-gear"></i>
+                        <h3>Setting</h3>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="main">
+
+            <div id="Dashboard" class="Dashboard active-side">
+                <div class="dashboard">
+                
+                    <div class="cardse">
+                        <div class="cards">
+                            <div class="container-card">
+                                <h2 class="title">My Cards</h2>
+                                <div class="conatainer">
+                                    <div class="header">
+                                        <span class="logo">
+                                            <div class="text">
+                                                <h5>Balance</h5>
+                                                <h3>$5,756</h3>
+                                            </div>
+                                        </span>
+                                        <img class="chip" src="imags/Chip_Card.png" alt="logo">
+                                    </div>
+                                    <div class="validate">
+                                        <span>
+                                            <h4>Card Holder</h4>
+                                            <h3>Ahmad al huseen</h3>
+                                        </span>
+                                        <span>
+                                            <h4>Valid Thru</h4>
+                                            <h3>12/22</h3>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="details">
+                                    <h5 class="number">3778 **** **** 1234</h5>
+                                    <img class="logo-card" src="imags/Group 2 17.png" alt="logo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="cardse">
+                        <div class="cards">
+                            <div class="container-card">
+                                <h2 class="title">see All</h2>
+                                <div class="conatainer">
+                                    <div class="header">
+                                        <span class="logo">
+                                            <div class="text">
+                                                <h5>Balance</h5>
+                                                <h3>$5,756</h3>
+                                            </div>
+                                        </span>
+                                        <img class="chip" src="imags/Chip_Card1.png" alt="logo">
+                                    </div>
+                                    <div class="validate">
+                                        <span>
+                                            <h4>Card Holder</h4>
+                                            <h3>Ahmad al huseen</h3>
+                                        </span>
+                                        <span>
+                                            <h4>Valid Thru</h4>
+                                            <h3>12/22</h3>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="details">
+                                    <h5 class="number">3778 **** **** 1234</h5>
+                                    <img class="logo-card" src="imags/Group 17.png" alt="logo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="recent-transaction">
+                        <h3 class="title-recent main-titles">Recent Transaction</h3>
+                        <div class="conts">
+                            <div class="detailes">
+                                <div class="cont-img"><img src="imags/iconfinder_business_finance_money-13_2784281 1.png" alt=""></div>
+                                <div class="det">
+                                    <h3 class="name">my card</h3>
+                                    <h5>25 jun 2021</h5>
+                                </div>
+                                <h4 class="value">-$400</h4>
+                            </div>
+                            <div class="detailes">
+                                <div class="cont-img"><img src="imags/iconfinder_paypal_payment_pay_5340264 1.png" alt=""></div>
+                                <div class="det">
+                                    <h3 class="name">paypal</h3>
+                                    <h5>29 oct 2021</h5>
+                                    
+                                </div>
+                                <h4 class="value">+$400</h4>
+                            </div>
+                            <div class="detailes">
+                                <div class="cont-img"><img src="imags/iconfinder_6_4753731 1.png" alt=""></div>
+                                <div class="det">
+                                    <h3 class="name">jemi wilson</h3>
+                                    <h5>25 jun 2021</h5>
+                                    
+                                </div>
+                                <h4 class="value">+$2600</h4>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- chart 1 -->
+                    <!-- chart 2 -->
+    
+                    <div class="contain">
+                        <h3 class="title-trans main-titles">Quick Transfer</h3>
+                        <div class="container2 quick-transfer">
+                            <div class="details-sender">
+                                <div class="accounts">
+                                    <img src="imags/user 3 1.png" alt="">
+                                    <h4 class="name">ahmad</h4>
+                                    <h5 class="job">ceo</h5>
+                                </div>
+                                <div class="accounts">
+                                    <img src="imags/user 3 1.png" alt="">
+                                    <h4 class="name">ali</h4>
+                                    <h5 class="job">Director</h5>
+                                </div>
+                                <div class="accounts">
+                                    <img src="imags/user 3 1.png" alt="">   
+                                    <h4 class="name">qasam</h4>
+                                    <h5 class="job">designer</h5>
+                                </div>
+                                <div class="next-icon"><img src="imags/Vector 1.png" alt=""></div>
+                            </div>
+                            <div class="send-money">
+                                <h5 class="text-amount">write amount</h5>
+                                <form action=""> 
+                                    <input type="text" placeholder="550.50">
+                                </form>
+                                <button class="submit"> send <img src="imags/Vector.png" alt="">  </button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- chart 3 -->
+                    
+                    
+                    <!-- end dashboard  -->
+                </div>
+            </div>
+
+            <div id="Transaction" class="Transaction">
+                <div class="upper-side">
+                    
+                <div class="cardse">
+                    <div class="cards">
+                        <div class="container-card">
+                            <h2 class="title">My Cards</h2>
+                            <div class="conatainer">
+                                <div class="header">
+                                    <span class="logo">
+                                        <div class="text">
+                                            <h5>Balance</h5>
+                                            <h3>$5,756</h3>
+                                        </div>
+                                    </span>
+                                    <img class="chip" src="imags/Chip_Card.png" alt="logo">
+                                </div>
+                                <div class="validate">
+                                    <span>
+                                        <h4>Card Holder</h4>
+                                        <h3>Ahmad al huseen</h3>
+                                    </span>
+                                    <span>
+                                        <h4>Valid Thru</h4>
+                                        <h3>12/22</h3>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="details">
+                                <h5 class="number">3778 **** **** 1234</h5>
+                                <img class="logo-card" src="imags/Group 2 17.png" alt="logo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cardse">
+                    <div class="cards">
+                        <div class="container-card">
+                            <h2 class="title">My Cards</h2>
+                            <div class="conatainer">
+                                <div class="header">
+                                    <span class="logo">
+                                        <div class="text">
+                                            <h5>Balance</h5>
+                                            <h3>$5,756</h3>
+                                        </div>
+                                    </span>
+                                    <img class="chip" src="imags/Chip_Card1.png" alt="logo">
+                                </div>
+                                <div class="validate">
+                                    <span>
+                                        <h4>Card Holder</h4>
+                                        <h3>Ahmad al huseen</h3>
+                                    </span>
+                                    <span>
+                                        <h4>Valid Thru</h4>
+                                        <h3>12/22</h3>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="details">
+                                <h5 class="number">3778 **** **** 1234</h5>
+                                <img class="logo-card" src="imags/Group 17.png" alt="logo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="expense">
+                    <h3 class="main-titles">My Expense</h3>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col"></div>
+                            <p>Aug</p>
+                        </div>
+                        <div class="row">
+                            <div class="col"></div>
+                            <p>Sep</p>
+                        </div>
+                        <div class="row">
+                            <div class="col"></div>
+                            <p>Oct</p>
+                        </div>
+                        <div class="row active-chart">
+                            <p>$12,500</p>
+                            <div class="col"></div>
+                            <p>Nov</p>
+                        </div>
+                        <div class="row">
+                            <div class="col"></div>
+                            <p>Dec</p>
+                        </div>
+                        <div class="row">
+                            <div class="col"></div>
+                            <p>Jan</p>
+                        </div>
+                    </div>
+                </div>
+                </div><br>
+
+                <div class="lower-side">
+                    <div class="recent-transaction">
+                        <div class="main-titles">Recent Transaction</div>
+                        <div class="containers">
+                            <ul>
+                                <li><a class="active" href="#">All transaction</a></li>
+                                <li><a  href="#">Income</a></li>
+                                <li><a href="#">Expense</a></li>
+                            </ul>
+                
+                
+                            <table class="content-table">
+                                <thead>
+                                    <tr>
+                                        <th>Description</th>
+                                        <th>Transaction Id</th>
+                                        <th>Type</th>
+                                        <th>Card</th>
+                                        <th>Date</th>
+                                        <th>Amount</th>
+                                        <th>Receipt</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><img src="imags/Group 73.png" alt=""> Spotify</td>
+                                        <td>#1234567</td>
+                                        <td>shoping</td>
+                                        <td>1234 ***</td>
+                                        <td>28 jan,12.30 Am</td>
+                                        <td class="amount">+$12,000</td>
+                                        <td class="download">download</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="imags/Group 73.png" alt=""> Spotify</td>
+                                        <td>#1234567</td>
+                                        <td>shoping</td>
+                                        <td>1234 ***</td>
+                                        <td>28 jan,12.30 Am</td>
+                                        <td class="amount">+$12,000</td>
+                                        <td class="download">download</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="imags/Group 73.png" alt=""> Spotify</td>
+                                        <td>#1234567</td>
+                                        <td>shoping</td>
+                                        <td>1234 ***</td>
+                                        <td>28 jan,12.30 Am</td>
+                                        <td class="amount">+$12,000</td>
+                                        <td class="download">download</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="imags/Group 73 2.png" alt=""> Spotify</td>
+                                        <td>#1234567</td>
+                                        <td>shoping</td>
+                                        <td>1234 ***</td>
+                                        <td>28 jan,12.30 Am</td>
+                                        <td class="amount">-$12,000</td>
+                                        <td class="download">download</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="imags/Group 73 2.png" alt=""> Spotify</td>
+                                        <td>#1234567</td>
+                                        <td>shoping</td>
+                                        <td>1234 ***</td>
+                                        <td>28 jan,12.30 Am</td>
+                                        <td class="amount">-$12,000</td>
+                                        <td class="download">download</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="imags/Group 73 2.png" alt=""> Spotify</td>
+                                        <td>#1234567</td>
+                                        <td>shoping</td>
+                                        <td>1234 ***</td>
+                                        <td>28 jan,12.30 Am</td>
+                                        <td class="amount">-$12,000</td>
+                                        <td class="download">download</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="imags/Group 73 2.png" alt=""> Spotify</td>
+                                        <td>#1234567</td>
+                                        <td>shoping</td>
+                                        <td>1234 ***</td>
+                                        <td>28 jan,12.30 Am</td>
+                                        <td class="amount">-$12,000</td>
+                                        <td class="download">download</td>
+                                    </tr>
+                                    <tr>
+                                        <td><img src="imags/Group 73 2.png" alt=""> Spotify</td>
+                                        <td>#1234567</td>
+                                        <td>shoping</td>
+                                        <td>1234 ***</td>
+                                        <td>28 jan,12.30 Am</td>
+                                        <td class="amount">-$12,000</td>
+                                        <td class="download">download</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                
+                    </div>
+                
+                </div>
+                <!-- end transaction  -->
+            </div>
+
+            <div id="Accounts" class="Accounts">
+
+                <div class="person-account">
+                    <div class="container-person-account">
+                        <div class="imag"><img src="imags/money-tag 1.png" alt=""></div>
+                        <div class="det">
+                            <p class="name-part">My Balance</p>
+                            <p class="money">$12,000</p>
+                        </div>
+                    </div>
+                    <div class="container-person-account">
+                        <div class="imag"><img src="imags/Group.png" alt=""></div>
+                        <div class="det">
+                            <p class="name-part">My Balance</p>
+                            <p class="money">$12,000</p>
+                        </div>
+                    </div>
+                    <div class="container-person-account">
+                        <div class="imag"><img src="imags/Group 1.png" alt=""></div>
+                        <div class="det">
+                            <p class="name-part">My Balance</p>
+                            <p class="money">$12,000</p>
+                        </div>
+                    </div>
+                    <div class="container-person-account">
+                        <div class="imag"><img src="imags/003-saving.png" alt=""></div>
+                        <div class="det">
+                            <p class="name-part">My Balance</p>
+                            <p class="money">$12,000</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mid-side">
+
+                    <div class="last-transaction">
+                    <h3 class="main-titles">Last Transaction</h3>
+            
+                    <div class="container-last-transaction">
+                        
+                        <div class="details-last-transaction">
+                            <div class="image"><img src="imags/renew 1.png" alt=""></div>
+                            <div class="name-date">
+                                <p class="name-last-transaction">spotify subscribing</p>
+                                <p class="data same"> 25 jun 2022</p>
+                            </div>
+                            <p class="place same">shopping</p>
+                            <p class="id same">1234 ****</p>
+                            <p class="state same">panding</p>
+                            <p class="amount-last-transaction">-$1,000</p>
+                        </div>
+                            
+                            <div class="details-last-transaction">
+                                <div class="image"><img src="imags/Group 3.png" alt=""></div>
+                                <div class="name-date">
+                                    <p class="name-last-transaction">mobile services</p>
+                                    <p class="data same"> 25 jun 2022</p>
+                                </div>
+                                <p class="place same">services</p>
+                                <p class="id same">4932 ****</p>
+                                <p class="state same">completed</p>
+                                <p class="amount-last-transaction">+$2,000</p>
+                            </div>
+                        <div class="details-last-transaction">
+                            <div class="image"><img src="imags/Group 4.png" alt=""></div>
+                            <div class="name-date">
+                                <p class="name-last-transaction">spotify subscribing</p>
+                                <p class="data same"> 25 jun 2022</p>
+                            </div>
+                            <p class="place same">transfer</p>
+                            <p class="id same">1109 ****</p>
+                            <p class="state same">completed</p>
+                            <p class="amount-last-transaction">+$5,000</p>
+                        </div>
+            
+                    </div>
+            
+                    </div>
+
+                    <div class="cardse">
+                    <div class="cards">
+                        <div class="container-card">
+                            <div class="names-card">
+                                <h2 class="main-titles">My Cards</h2>
+                            </div>
+                            <div class="conatainer">
+                                <div class="header">
+                                    <span class="logo">
+                                        <div class="text">
+                                            <h5>Balance</h5>
+                                            <h3>$5,756</h3>
+                                        </div>
+                                    </span>
+                                    <img class="chip" src="imags/Chip_Card.png" alt="logo">
+                                </div>
+                                <div class="validate">
+                                    <span>
+                                        <h4>Card Holder</h4>
+                                        <h3>Ahmad al huseen</h3>
+                                    </span>
+                                    <span>
+                                        <h4>Valid Thru</h4>
+                                        <h3>12/22</h3>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="details">
+                                <h5 class="number">3778 **** **** 1234</h5>
+                                <img class="logo-card" src="imags/Group 2 17.png" alt="logo">
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+                </div>
+
+
+                <div class="bottom-side">
+
+                    <div class="depit-credit-card-chart">
+        
+                        <div class="main-titles">Depit & Credit Overview</div>
+                        
+                        <div class="chart">
+                
+                            <div class="upper-side-chart">
+                                <p class="same"><span>$7,500</span> Depited & <span>$5,400 </span> credited in this week</p>
+                                <div class="rigth-side">
+                                    <div class="square1 square"></div>
+                                    <p class="dep same">Depit</p>
+                                    <div class="square2 square"></div>
+                                    <p class="cre same">Credit</p>
+                                </div>
+                            </div>
+                    
+                    
+                            <div class="draw">
+                                
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="row1"></div>
+                                        <div class="row2"></div>
+                                    </div>
+                                    <p class="same day">sat</p>
+                                </div>
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="row1"></div>
+                                        <div class="row2"></div>
+                                    </div>
+                                    <p class="same day">sun</p>
+                                </div>
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="row1"></div>
+                                        <div class="row2"></div>
+                                    </div>
+                                    <p class="same day">mon</p>
+                                </div>
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="row1"></div>
+                                        <div class="row2"></div>
+                                    </div>
+                                    <p class="same day">tue</p>
+                                </div>
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="row1"></div>
+                                        <div class="row2"></div>
+                                    </div>
+                                    <p class="same day">wed</p>
+                                </div>
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="row1"></div>
+                                        <div class="row2"></div>
+                                    </div>
+                                    <p class="same day">thu</p>
+                                </div>
+                                <div class="col">
+                                    <div class="row">
+                                        <div class="row1"></div>
+                                        <div class="row2"></div>
+                                    </div>
+                                    <p class="same day">fri</p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    
+                    
+                    <div class="invoices-sent">
+                        <h3 class="main-titles">Invoices Sent</h3>
+                
+                        <div class="container-invoices-sent">
+                            
+                            <div class="details-invoices-sent">
+                                <div class="image"><img src="imags/apple 2 1.png" alt=""></div>
+                                <div class="name-date">
+                                    <p class="name-invoices-sent">Apple store</p>
+                                    <p class="time-ago same"> 3min ago</p>
+                                </div>
+                                <p class="amount-invoices-sent">$100</p>
+                            </div>
+                            
+                            <div class="details-invoices-sent">
+                                <div class="image"><img src="imags/Group 6.png" alt=""></div>
+                                <div class="name-date">
+                                    <p class="name-invoices-sent">Michael</p>
+                                    <p class="time-ago same"> 5h ago</p>
+                                </div>
+                                <p class="amount-invoices-sent">$240</p>
+                            </div>
+                            <div class="details-invoices-sent">
+                                <div class="image"><img src="imags/Group7.png" alt=""></div>
+                                <div class="name-date">
+                                    <p class="name-invoices-sent">Playstation</p>
+                                    <p class="time-ago same"> 2 days ago</p>
+                                </div>
+                                <p class="amount-invoices-sent">$150</p>
+                            </div>
+                            <div class="details-invoices-sent">
+                                <div class="image"><img src="imags/Group 4.png" alt=""></div>
+                                <div class="name-date">
+                                    <p class="name-invoices-sent">William</p>
+                                    <p class="time-ago same"> 4 days ago</p>
+                                </div>
+                                <p class="amount-invoices-sent">$90</p>
+                            </div>
+                            
+                
+                
+                        </div>
+                
+                    </div>
+
+                    <!-- end account  -->
+                </div>
+            </div>
+
+            <div id="Investment" class="Investments">
+                <div class="top">
+                    
+                    <div class="person-account-inv">
+                        <div class="container-person-account-inv">
+                            <div class="imag"><img src="imags/money-bag-of-dollars 1.png" alt=""></div>
+                            <div class="det">
+                                <p class="name-part">Total Invested Amount</p>
+                                <p class="money">$120,000</p>
+                            </div>
+                        </div>
+                        <div class="container-person-account-inv">
+                            <div class="imag"><img src="imags/pie-chart 1.png" alt=""></div>
+                            <div class="det">
+                                <p class="name-part">Number of invested</p>
+                                <p class="money">1,200</p>
+                            </div>
+                        </div>
+                        <div class="container-person-account-inv">
+                            <div class="imag"><img src="imags/repeat 1.png" alt=""></div>
+                            <div class="det">
+                                <p class="name-part">Rate of retrun</p>
+                                <p class="money">+5.80%</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <!-- <div class="mid"></div> -->
+                
+                <div class="bottom">
+
+
+                    <div class="My-invetment">
+                        <div class="main-titles">My Investment</div>
+                        <div class="container-investment">
+                            
+                            <div class="det">
+                                <div class="image"><img src="imags/Vector4.png" alt=""></div>
+                                <div class="names">
+                                    <p class="name-inv">Apple Store</p>
+                                    <p class="place same">E-commerce,marketplace</p>
+                                </div>
+                    
+                                <div class="value">
+                                    <p class="name-inv">$53,000</p>
+                                    <p class="name same">Envestment value</p>
+                                </div>
+                                <div class="price">
+                                    <p class="mud name-inv">+16%</p>
+                                    <p class="name same">Return Value</p>
+                                </div>
+                    
+                            </div>
+                            <div class="det">
+                                <div class="image"><img src="imags/Group 249.png" alt=""></div>
+                                <div class="names">
+                                    <p class="name-inv">sumsung mobile</p>
+                                    <p class="place same">E-commerce,marketplace</p>
+                                </div>
+                    
+                                <div class="value">
+                                    <p class="name-inv">$1,000</p>
+                                    <p class="name same">Envestment value</p>
+                                </div>
+                                <div class="price">
+                                    <p class="mud name-inv">+10%</p>
+                                    <p class="name same">Return Value</p>
+                                </div>
+                    
+                            </div>
+                            <div class="det">
+                                <div class="image"><img src="imags/Group123.png" alt=""></div>
+                                <div class="names">
+                                    <p class="name-inv">Tesla Motors</p>
+                                    <p class="place same">E-commerce,marketplace</p>
+                                </div>
+                    
+                                <div class="value">
+                                    <p class="name-inv">$4,000</p>
+                                    <p class="name same">Envestment value</p>
+                                </div>
+                                <div class="price">
+                                    <p class="mud name-inv">-4%</p>
+                                    <p class="name same">Return Value</p>
+                                </div>
+                    
+                            </div>
+                        
+                    
+                        </div>
+                    </div>
+                    
+                    <div class="trending-stock">
+                        <div class="main-titles">Trending Stoke</div>
+                
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>SL No</th>
+                                    <th>Name</th>
+                                    <th>Price</th>
+                                    <th>Retrun</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>01.</td>
+                                    <td>trivago</td>
+                                    <td>$520</td>
+                                    <td class="amount">+5%</td>
+                                </tr>
+                                <tr>
+                                    <td>02.</td>
+                                    <td>Canon</td>
+                                    <td>$490</td>
+                                    <td class="amount">+15%</td>
+                                </tr>
+                                <tr>
+                                    <td>03.</td>
+                                    <td>Uber Food</td>
+                                    <td>$50</td>
+                                    <td class="amount">+1%</td>
+                                </tr>
+                                <tr>
+                                    <td>04.</td>
+                                    <td>Nokia</td>
+                                    <td>$940</td>
+                                    <td class="amount">+25%</td>
+                                </tr>
+                                <tr>
+                                    <td>05.</td>
+                                    <td>tiktok</td>
+                                    <td>$1,220</td>
+                                    <td class="amount">+10%</td>
+                                </tr>
+                                <tr>
+                                    <td>06.</td>
+                                    <td>youtube</td>
+                                    <td>$1,000</td>
+                                    <td class="amount">+10%</td>
+                                </tr>
+                                <tr>
+                                    <td>07.</td>
+                                    <td>instagram</td>
+                                    <td>$20</td>
+                                    <td class="amount">-199%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="Credit-Card" class="Credit-Card">
+                <div class="top">
+                    <div class="cardse">
+                        <div class="cards">
+                            <div class="container-card">
+                                <h2 class="title">My Cards</h2>
+                                <div class="conatainer">
+                                    <div class="header">
+                                        <span class="logo">
+                                            <div class="text">
+                                                <h5>Balance</h5>
+                                                <h3>$5,756</h3>
+                                            </div>
+                                        </span>
+                                        <img class="chip" src="imags/Chip_Card.png" alt="logo">
+                                    </div>
+                                    <div class="validate">
+                                        <span>
+                                            <h4>Card Holder</h4>
+                                            <h3>Ahmad al huseen</h3>
+                                        </span>
+                                        <span>
+                                            <h4>Valid Thru</h4>
+                                            <h3>12/22</h3>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="details">
+                                    <h5 class="number">3778 **** **** 1234</h5>
+                                    <img class="logo-card" src="imags/Group 2 17.png" alt="logo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="cardse">
+                        <div class="cards">
+                            <div class="container-card">
+    
+                                <div class="conatainer">
+                                    <div class="header">
+                                        <span class="logo">
+                                            <div class="text">
+                                                <h5>Balance</h5>
+                                                <h3>$5,756</h3>
+                                            </div>
+                                        </span>
+                                        <img class="chip" src="imags/Chip_Card1.png" alt="logo">
+                                    </div>
+                                    <div class="validate">
+                                        <span>
+                                            <h4>Card Holder</h4>
+                                            <h3>Ahmad al huseen</h3>
+                                        </span>
+                                        <span>
+                                            <h4>Valid Thru</h4>
+                                            <h3>12/22</h3>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="details">
+                                    <h5 class="number">3778 **** **** 1234</h5>
+                                    <img class="logo-card" src="imags/Group 17.png" alt="logo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="cardse">
+                        <div class="cards">
+                            <div class="container-card">
+                                <div class="conatainer">
+                                    <div class="header">
+                                        <span class="logo">
+                                            <div class="text">
+                                                <h5>Balance</h5>
+                                                <h3>$5,756</h3>
+                                            </div>
+                                        </span>
+                                        <img class="chip" src="imags/Chip_Card1.png" alt="logo">
+                                    </div>
+                                    <div class="validate">
+                                        <span>
+                                            <h4>Card Holder</h4>
+                                            <h3>Ahmad al huseen</h3>
+                                        </span>
+                                        <span>
+                                            <h4>Valid Thru</h4>
+                                            <h3>12/22</h3>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="details">
+                                    <h5 class="number">3778 **** **** 1234</h5>
+                                    <img class="logo-card" src="imags/Group 17.png" alt="logo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mid">
+
+                    <div class="card-list">
+                        <h3 class="main-titles">Card List</h3>
+                        <div class="container-card-list">
+                            <div class="det-card-list">
+                                <div class="image"><img src="imags/credit-card 2 1.png" alt=""></div>
+                                <div class="names">
+                                    <p class="name">Card Type</p>
+                                    <p class="priority">Secondary</p>
+                                </div>
+                                <div class="place">
+                                    <p class="name">Bank</p>
+                                    <p class="priority">DBL bark</p>
+                                </div>
+                                <div class="card-num">
+                                    <p class="name">Card Number</p>
+                                    <p class="priority">**** 3948</p>
+                                </div>
+                                <div class="namain-card">
+                                    <p class="name">Namain Card</p>
+                                    <p class="priority">William</p>
+                                </div>
+                                <p class="view-details-card-list">view details</p>
+                            </div>
+                            <div class="det-card-list">
+                                <div class="image"><img src="imags/credit-card  41.png" alt=""></div>
+                                <div class="names">
+                                    <p class="name">Card Type</p>
+                                    <p class="priority">Secondary</p>
+                                </div>
+                                <div class="place">
+                                    <p class="name">Bank</p>
+                                    <p class="priority">DBL bark</p>
+                                </div>
+                                <div class="card-num">
+                                    <p class="name">Card Number</p>
+                                    <p class="priority">**** 3948</p>
+                                </div>
+                                <div class="namain-card">
+                                    <p class="name">Namain Card</p>
+                                    <p class="priority">William</p>
+                                </div>
+                                <p class="view-details-card-list">view details</p>
+                            </div>
+                            <div class="det-card-list">
+                                <div class="image"><img src="imags/credit-card 3 1.png" alt=""></div>
+                                <div class="names">
+                                    <p class="name">Card Type</p>
+                                    <p class="priority">Secondary</p>
+                                </div>
+                                <div class="place">
+                                    <p class="name">Bank</p>
+                                    <p class="priority">DBL bark</p>
+                                </div>
+                                <div class="card-num">
+                                    <p class="name">Card Number</p>
+                                    <p class="priority">**** 3948</p>
+                                </div>
+                                <div class="namain-card">
+                                    <p class="name">Namain Card</p>
+                                    <p class="priority">William</p>
+                                </div>
+                                <p class="view-details-card-list">view details</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div class="bottom">
+
+
+                    <div class="add-new-card">
+                        <h3 class="main-titles">Add New Card</h3>
+                        <div class="container-add-new-card">
+                            <p class="info-add-new-card">
+                                credit card generally means a plastic card issued by scheduled 
+                                commercial banks assigned to a cardholder , with a credit limit
+                                ,that can be used to purchese goods and services on credit or 
+                                obtain cach advances.
+                            </p>
+                            <div class="mid-add-new-card">
+                                <form action="">
+                                    <div>
+                                        <label for="" class="lab">Card Type</label><br>
+                                        <input class="field" type="text" placeholder="classic"><br>
+                                    </div>
+                                    <div>
+                                        <label for="" class="lab">Name On Card </label><br>
+                                        <input type="text" placeholder="My Cards" class="field">
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="mid-add-new-card">
+                                <form action="">
+                                    <div>
+                                        <label for="" class="lab">Card Number</label><br>
+                                        <input class="field" type="password" placeholder="******"><br> 
+                                    </div>
+                                    <div>
+                                        <label for="" class="lab">Expiration Date</label><br>
+                                        <input type="date" placeholder="My Cards" class="field">
+                                    </div>
+                                </form>
+                            </div>
+                            <button class="add-card">Add Card</button>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-setting">
+                        <h3 class="main-titles">Card Setting</h3>
+                        <div class="container-card-setting">
+                            <div class="det-card-setting">
+                                <div class="image"><img src="imags/Group3.png" alt=""></div>
+                                <div class="names">
+                                    <p class="name">Bank Card</p>
+                                    <p class="p">instantly block your card</p>
+                                </div>
+                            </div>
+                            <div class="det-card-setting">
+                                <div class="image"><img src="imags/Group79.png" alt=""></div>
+                                <div class="names">
+                                    <p class="name">change pin card</p>
+                                    <p class="p">choose another pin code</p>
+                                </div>
+                            </div>
+                            <div class="det-card-setting">
+                                <div class="image"><img src="imags/Group1231.png" alt=""></div>
+                                <div class="names">
+                                    <p class="name">add to google pay</p>
+                                    <p class="p">withdraw without any card</p>
+                                </div>
+                            </div>
+                            <div class="det-card-setting">
+                                <div class="image"><img src="imags/apple 2 1.png" alt=""></div>
+                                <div class="names">
+                                    <p class="name">add to apple pay</p>
+                                    <p class="p">withdraw without any card</p>
+                                </div>
+                            </div>
+                            <div class="det-card-setting">
+                                <div class="image"><img src="imags/apple 2 1.png" alt=""></div>
+                                <div class="names">
+                                    <p class="name">add to apple store</p>
+                                    <p class="p">withdraw without any card</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div id="Loans" class="Loans">
+
+                <div class="upper">
+                    
+                    <div class="personal-loan">
+                        <div class="det">
+                            <div class="image"><img src="imags/user 3 2.png" alt=""></div>
+                            <div class="names">
+                                <p class="name">personal loans</p>
+                                <p class="amount">$50,200</p>
+                            </div>
+                        </div>
+                        <div class="det">
+                            <div class="image"><img src="imags/briefcase 1.png" alt=""></div>
+                            <div class="names">
+                                <p class="name">corporate loans</p>
+                                <p class="amount">$100,000</p>
+                            </div>
+                        </div>
+                        <div class="det">
+                            <div class="image"><img src="imags/graph 1.png" alt=""></div>
+                            <div class="names">
+                                <p class="name">business loans</p>
+                                <p class="amount">$500,000</p>
+                            </div>
+                        </div>
+                        <div class="det">
+                            <div class="image"><img src="imags/support 1.png" alt=""></div>
+                            <div class="names">
+                                <p class="name">custom loans</p>
+                                <p class="amount">choose money</p>
+                            </div>
+                        </div>
+                    
+                    </div>
+                
+                </div>
+
+
+
+                <div class="lower">
+                    <div class="active-loans">
+                        <h3 class="main-titles">active loans overview</h3>
+                        <div class="table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>sl no</th>
+                                        <th>loan money</th>
+                                        <th>left to repay</th>
+                                        <th>duration</th>
+                                        <th>interest rate</th>
+                                        <th>installment</th>
+                                        <th>repay</th>
+                                    </tr>
+                                </thead>
+                
+                                <tbody>
+                                    <tr>
+                                        <td>01.</td>
+                                        <td>$100,000</td>
+                                        <td>$45,000</td>
+                                        <td>8 months</td>
+                                        <td>12%</td>
+                                        <td>$2,000 / month</td>
+                                        <td class="repay">repay</td>
+                                    </tr>
+                                    <tr>
+                                        <td>02.</td>
+                                        <td>$10,000</td>
+                                        <td>$25,000</td>
+                                        <td>15 months</td>
+                                        <td>2%</td>
+                                        <td>$4,000 / month</td>
+                                        <td class="repay">repay</td>
+                                    </tr>
+                                    <tr>
+                                        <td>03.</td>
+                                        <td>$400,000</td>
+                                        <td>$55,000</td>
+                                        <td>19 months</td>
+                                        <td>1%</td>
+                                        <td>$1,000 / month</td>
+                                        <td class="repay">repay</td>
+                                    </tr>
+                                    <tr>
+                                        <td>04.</td>
+                                        <td>$210,000</td>
+                                        <td>$4,000</td>
+                                        <td>21 months</td>
+                                        <td>50%</td>
+                                        <td>$6,000 / month</td>
+                                        <td class="repay">repay</td>
+                                    </tr>
+                                    <tr>
+                                        <td>05.</td>
+                                        <td>$600,000</td>
+                                        <td>$65,000</td>
+                                        <td>23 months</td>
+                                        <td>10%</td>
+                                        <td>$10,000 / month</td>
+                                        <td class="repay">repay</td>
+                                    </tr>
+                                    <tr>
+                                        <td>06.</td>
+                                        <td>$100,000</td>
+                                        <td>$45,000</td>
+                                        <td>8 months</td>
+                                        <td>12%</td>
+                                        <td>$2,000 / month</td>
+                                        <td class="repay">repay</td>
+                                    </tr>
+                                    <tr>
+                                        <td>07.</td>
+                                        <td>$100,000</td>
+                                        <td>$45,000</td>
+                                        <td>8 months</td>
+                                        <td>12%</td>
+                                        <td>$2,000 / month</td>
+                                        <td class="repay">repay</td>
+                                    </tr>
+                                    <tr>
+                                        <td>08.</td>
+                                        <td>$100,000</td>
+                                        <td>$45,000</td>
+                                        <td>8 months</td>
+                                        <td>12%</td>
+                                        <td>$2,000 / month</td>
+                                        <td class="repay">repay</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Total</td>
+                                        <td>$1000,000</td>
+                                        <td>$450,000</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>$200,000 / month</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="Services" class="Services">
+
+                <div class="upper">
+                    <div class="container-services">
+                        <div class="det">
+                            <div class="image"><img src="imags/Group153.png" alt=""></div>
+                            <div class="names">
+                                <p class="name">life insurance</p>
+                                <p class="p">ultimited protection</p>
+                            </div>
+                        </div>
+                        <div class="det">
+                            <div class="image"><img src="imags/bag 1.png" alt=""></div>
+                            <div class="names">
+                                <p class="name">shopping</p>
+                                <p class="p">buy. think. grow.</p>
+                            </div>
+                        </div>
+                        <div class="det">
+                            <div class="image"><img src="imags/shield 1.png" alt=""></div>
+                            <div class="names">
+                                <p class="name">safety</p>
+                                <p class="p">we are your allies</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+
+                <div class="lower">
+                    <div class="bank-services-list">
+                        <h3 class="main-titles">bank services list</h3>
+                        <div class="container-bank-services-list">
+                            <div class="det">
+                                <div class="image"><img src="imags/loan 11.png" alt=""></div>
+                                <div class="names">
+                                    <p class="name">business loans</p>
+                                    <p class="p">it's a long established</p>
+                                </div>
+                                <div class="names">
+                                    <p class="name">lorem ipsum</p>
+                                    <p class="p">many publishing</p>
+                                </div>
+                                <div class="names">
+                                    <p class="name">lorem ipsum</p>
+                                    <p class="p">many publishing</p>
+                                </div>
+                                <div class="names">
+                                    <p class="name">lorem ipsum</p>
+                                    <p class="p">many publishing</p>
+                                </div>
+                                <p class="view-details">view details</p>
+                            </div>
+                            <div class="det">
+                                <div class="image"><img src="imags/briefcase 1.png" alt=""></div>
+                                <div class="names">
+                                    <p class="name">checking accounts</p>
+                                    <p class="p">it's a long established</p>
+                                </div>
+                                <div class="names">
+                                    <p class="name">lorem ipsum</p>
+                                    <p class="p">many publishing</p>
+                                </div>
+                                <div class="names">
+                                    <p class="name">lorem ipsum</p>
+                                    <p class="p">many publishing</p>
+                                </div>
+                                <div class="names">
+                                    <p class="name">lorem ipsum</p>
+                                    <p class="p">many publishing</p>
+                                </div>
+                                <p class="view-details">view details</p>
+                            </div>
+                            <div class="det">
+                                <div class="image"><img src="imags/graph 1.png" alt=""></div>
+                                <div class="names">
+                                    <p class="name">savings accounts</p>
+                                    <p class="p">it's a long established</p>
+                                </div>
+                                <div class="names">
+                                    <p class="name">lorem ipsum</p>
+                                    <p class="p">many publishing</p>
+                                </div>
+                                <div class="names">
+                                    <p class="name">lorem ipsum</p>
+                                    <p class="p">many publishing</p>
+                                </div>
+                                <div class="names">
+                                    <p class="name">lorem ipsum</p>
+                                    <p class="p">many publishing</p>
+                                </div>
+                                <p class="view-details">view details</p>
+                            </div>
+                            <div class="det">
+                                <div class="image"><img src="imags/user 3 2.png" alt=""></div>
+                                <div class="names">
+                                    <p class="name">debit and credit cards</p>
+                                    <p class="p">it's a long established</p>
+                                </div>
+                                <div class="names">
+                                    <p class="name">lorem ipsum</p>
+                                    <p class="p">many publishing</p>
+                                </div>
+                                <div class="names">
+                                    <p class="name">lorem ipsum</p>
+                                    <p class="p">many publishing</p>
+                                </div>
+                                <div class="names">
+                                    <p class="name">lorem ipsum</p>
+                                    <p class="p">many publishing</p>
+                                </div>
+                                <p class="view-details">view details</p>
+                            </div>
+                            <div class="det">
+                                <div class="image"><img src="imags/shield 1.png" alt=""></div>
+                                <div class="names">
+                                    <p class="name">life insurance</p>
+                                    <p class="p">it's a long established</p>
+                                </div>
+                                <div class="names">
+                                    <p class="name">lorem ipsum</p>
+                                    <p class="p">many publishing</p>
+                                </div>
+                                <div class="names">
+                                    <p class="name">lorem ipsum</p>
+                                    <p class="p">many publishing</p>
+                                </div>
+                                <div class="names">
+                                    <p class="name">lorem ipsum</p>
+                                    <p class="p">many publishing</p>
+                                </div>
+                                <p class="view-details">view details</p>
+                            </div>
+                            <div class="det">
+                                <div class="image"><img src="imags/loan 11.png" alt=""></div>
+                                <div class="names">
+                                    <p class="name">business loans</p>
+                                    <p class="p">it's a long established</p>
+                                </div>
+                                <div class="names">
+                                    <p class="name">lorem ipsum</p>
+                                    <p class="p">many publishing</p>
+                                </div>
+                                <div class="names">
+                                    <p class="name">lorem ipsum</p>
+                                    <p class="p">many publishing</p>
+                                </div>
+                                <div class="names">
+                                    <p class="name">lorem ipsum</p>
+                                    <p class="p">many publishing</p>
+                                </div>
+                                <p class="view-details">view details</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+
+            <div id="Setting" class="Setting">
+
+                <div class="container-setting">
+                    <ul>
+                        <li><a id="Edit-profile" class="active" href="#">Edit profile</a></li>
+                        <li><a id="preferences" href="#">preferences</a></li>
+                        <li><a id="security"  href="#">security</a></li>
+                    </ul>
+
+                    <aside class="settings">
+
+                        <div id="Edit-profile" class="active-setting">
+                            <div class="edit-profile">
+                                <div class="image-profile">
+                                    <img class="img" src="chip.png" alt="">
+                                    <div class="icon"><img src="imags/pencil-alt 1.png" alt=""></div>
+                                    
+                                </div>
+                        
+                                <div class="input">
+                                    <form action="">
+                                        <div class="con">
+                                            <label for="">Your name</label><br>
+                                            <input type="text" placeholder="ahmad al huseen">
+                                        </div>
+                                        <div class="con">
+                                            <label for="">user name</label><br>
+                                            <input type="text" placeholder="ahmad al huseen">
+                                        </div>
+                                        <div class="con">
+                                            <label for="">email</label><br>
+                                            <input type="email" placeholder="ahmad@gmail.com">
+                                        </div>
+                                        <div class="con">
+                                            <label for="">password</label><br>
+                                            <input type="password" placeholder="*****">
+                                        </div>
+                                        <div class="con">
+                                            <label for="">Date of birthday</label><br>
+                                            <input type="date" placeholder="25 jun 2025">
+                                        </div>
+                                        <div class="con">
+                                            <label for="">present address</label><br>
+                                            <input type="text" placeholder="Damascuse , syria">
+                                        </div>
+                                        <div class="con">
+                                            <label for="">permanent address</label><br>
+                                            <input type="text" placeholder="Damascuse , syria">
+                                        </div>
+                                        <div class="con">
+                                            <label for="">city</label><br>
+                                            <input type="text" placeholder="Damascuse">
+                                        </div>
+                                        <div class="con">
+                                            <label for="">postal code</label><br>
+                                            <input type="number" placeholder="59332">
+                                        </div>
+                                        <div class="con">
+                                            <label for="">country</label><br>
+                                            <input type="text" placeholder="syria">
+                                        </div>
+                                        <div class="con">
+                                        <button class="save">Save</button>
+                                        </div>
+                                    </form>
+                                </div>
+                                
+                            </div>
+                        </div>
+    
+                        <div id="preferences" class="preferences">
+                            <div class="inputs">
+                                <div class="con">
+                                    <label for="">Currency</label><br>
+                                    <input type="text" placeholder="syria">
+                                </div>
+                    
+                                <div class="con">
+                                    <label for="">time zone</label><br>
+                                    <input type="text" placeholder="(GMT-12:00) international date line west">
+                                    
+                                </div>
+                            </div>
+                    
+                    
+                            <div class="lower">
+                                <h2 class="main-titles">Notification</h2>
+                                <div class="en">
+                    
+                                    <input class="checkbox" id="checked" type="checkbox">
+                                    <div class="enable"><label for="checked"><div class="circul"></div></label></div>
+                                    <p>i send or receive digita currency</p>
+                                    
+                                </div>
+                                <div class="en">
+                    
+                                    <input class="checkbox" id="checked1" type="checkbox">
+                                    <div class="enable"><label for="checked1"><div class="circul"></div></label></div>
+                                    <p>i recieve merchant order</p>
+                                    
+                                </div>
+                                <div class="en">
+                    
+                                    <input class="checkbox" id="checked2" type="checkbox">
+                                    <div class="enable"><label for="checked2"><div class="circul"></div></label></div>
+                                    <p>there are recommendation for my account</p>
+                                    
+                                </div>
+                            </div>
+                    
+                            <div class="btn"><button class="save">save</button></div>
+                        </div>
+    
+                        <div id="security" class="Security">
+                            <div class="con">
+                                <h3 class="main-titles">two-factor authentication</h3>
+                                <div class="con2">
+                                    <input class="checkbox" id="checked3" type="checkbox">
+                                    <div class="enable"><label for="checked3"><div class="circul"></div></label></div>
+                                    <p>Enable or disaple two factor authentication</p>
+                                </div>
+                            </div>
+                    
+                            <div class="con">
+                                <h3 class="main-titles">change password</h3>
+                                <div class="pass">
+                                    <label for="">current password</label><br>
+                                    <input type="password" placeholder="*******">
+                                </div>
+                                <div class="next">
+                                    <label for="">new password</label><br>
+                                    <input type="password" placeholder="*******">
+                                </div>
+                            </div>
+                    
+                            <div class="btn"><button class="save">save</button></div>
+                        </div>
+
+                    </aside>
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
